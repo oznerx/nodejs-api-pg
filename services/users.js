@@ -6,7 +6,6 @@ module.exports = {
         sql = "SELECT id, email FROM usuario"
 
         return dbService.querypromise(sql);
-
     },
     getUser: (id) => {
 
