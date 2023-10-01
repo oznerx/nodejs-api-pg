@@ -2,7 +2,7 @@ const dbService = require('../config/db.js')
 
 module.export = {
     addWord: (body) => {
-        const {word} = body;
+        const {word, idsettings} = body;
         isListed = false;
 
         // check if the word is in the tracker table

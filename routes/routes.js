@@ -11,4 +11,6 @@ router.use("/api/v1/words", require("./words.js"))
 
 // router.use("/api/v1/tracker", require("./tracker.js"))
 
+router.use("/api/v1/settings", require("./settings.js"))
+
 module.exports = router;
