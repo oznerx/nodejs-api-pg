@@ -16,9 +16,11 @@ app.use(cookieParser())
 
 // just uncomment this line to re sync the database (making changes to the database, remember it will delete all the previous data)
 
+/*
 db.sequelize.sync({ force: true }).then(() => {
   console.log("db has been re sync")
 })
+*/
 
 
 app.get('/', (req, res) => {
