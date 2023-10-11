@@ -14,7 +14,7 @@ module.exports = {
         const word = req.params.word;
         try {
             const tracker = await TrackerService.addWord(word); 
-            res.json({ tracker });ç
+            res.json({ tracker });
         }  
         catch (err) {
             res.json({ message: `Error: ${err}` });
