@@ -4,6 +4,8 @@ const dotenv = require('dotenv')
 const cookieParser = require('cookie-parser')
 const db = require('./models')
 
+const cors = require('cors')
+
 
 dotenv.config()
 const app = express()
@@ -12,6 +14,7 @@ const port = process.env.PORT
 //middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 app.use(cookieParser())
 
 // just uncomment this line to re sync the database (making changes to the database, remember it will delete all the previous data)
